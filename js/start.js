@@ -5,7 +5,7 @@ const ecca = document.querySelector('#ecca')
 
 const endPoint = 13;
 const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //사용자가 선택한 부분에 대한 점수
-const color = ['#5ec2c2', '#5a8dff', '#e4002b', '#aa8b2f', '#ec1c24', '#ffc900', '#ff4219', '#ff0a07', '#f37321', '#00492b'];
+const color = ['#5ec2c2', '#ffc900', '#e4002b', '#aa8b2f', '#ec1c24', '#5a8dff', '#ff4219', '#ff0a07', '#f37321', '#00492b'];
 
 function calResult() {
     console.log(select);
