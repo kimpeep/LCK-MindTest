@@ -16,7 +16,7 @@
     />
 
     <!-- sns share -->
-    <meta property="og:url" content="https://twelvelovetype.netlify.app" />
+    <meta property="og:url" content="https://lck-mindtest.netlify.app" />
     <meta property="og:title" content="십이간지 연애유형" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="img/share.png" />
@@ -25,7 +25,8 @@
     <!--favicon-->
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" />
-
+    
+    <!-- css -->
     <link rel="stylesheet" href="./css/default.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/qna.css" />
@@ -46,7 +47,7 @@
   <body>
     <div class="container">
       <section id="main" class="mx-auto mt-5 py-5 px-3">
-        <h3>ECCA와 함께하는 게임 유형 알아보기</h3>
+        <h3 style="font-family: paybooc-Bold;">ECCA와 함께하는 게임 유형 알아보기</h3>
         <div class="col-lg-6 col-md-6 col-sm-6 col-12 mx-auto">
           <img src="./img/ECCA.jpg" alt="mainImage" class="img-fluid" />
         </div>
@@ -68,7 +69,7 @@
       </section>
 
       <section id="result" class="mx-auto my-5 py-5 px-3">
-        <h1>당신의 결과는?!</h1>
+        <h1 style="font-family: paybooc-Bold;">당신의 결과는?!</h1>
         <div class="resultname"></div>
         <div
           id="resultImg"
@@ -78,7 +79,16 @@
         <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">
           공유하기
         </button>
+        <script type="text/javascript">
+          function moveHome(){
+          location.href = "/index.html";
+          }
+        </script>
+        <button type="button" id="participate" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">
+          나도 참여하기
+        </button>
       </section>
+
       <script src="./js/data.js" charset="utf-8"></script>
       <script src="./js/start.js" charset="utf-8"></script>
       <script src="./js/share.js" charset="utf-8"></script>

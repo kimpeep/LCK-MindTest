@@ -4,6 +4,7 @@ const result = document.querySelector("#result");
 
 const endPoint = 12;
 const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //사용자가 선택한 부분에 대한 점수
+const color = ['#5ec2c2', '#5a8dff', '#e4002b', '#aa8b2f', '#ec1c24', '#ffc900', '#ff4219', '#ff0a07', '#f37321', '#00492b'];
 
 function calResult() {
     console.log(select);
@@ -23,6 +24,9 @@ function setResult() {
     resultImg.alt = point;
     resultImg.classList.add("img-fluid");
     imgDiv.appendChild(resultImg);
+
+    document.body.style.backgroundColor = color[point];
+    document.getElementById('participate').style.backgroundColor = color[point];
 
     const resultDesc = document.querySelector(".resultDesc");
     resultDesc.innerHTML = infoList[point].desc;
