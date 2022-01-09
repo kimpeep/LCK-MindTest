@@ -17,14 +17,10 @@
 
     <!-- sns share -->
     <meta property="og:url" content="https://lck-mindtest.netlify.app" />
-    <meta property="og:title" content="십이간지 연애유형" />
+    <meta property="og:title" content="LCK 게임 유형" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="img/share.png" />
-    <meta property="og:description" content="십이간지로 알아보는 연애유형" />
-
-    <!--favicon-->
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" />
+    <meta property="og:description" content="LCK 게임 유형" />
     
     <!-- css -->
     <link rel="stylesheet" href="./css/default.css" />
@@ -69,21 +65,23 @@
       </section>
 
       <section id="result" class="mx-auto my-5 py-5 px-3">
-        <h1 style="font-family: paybooc-Bold;">당신의 결과는?!</h1>
+        <h1 style="font-family: paybooc-Bold;">당신의 결과는?</h1>
         <div class="resultname"></div>
         <div
           id="resultImg"
-          class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"
+          class="my-5 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"
         ></div>
-        <div class="resultDesc"></div>
+        <div class="resultDesc mx-4"></div>
         <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">
           공유하기
         </button>
+
         <script type="text/javascript">
           function moveHome(){
           location.href = "/index.html";
           }
         </script>
+        
         <button type="button" id="participate" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">
           나도 참여하기
         </button>

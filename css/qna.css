@@ -6,8 +6,12 @@
     background-color: whitesmoke;
     text-align: center;
     border-radius: 20px;
-    font-size: 24px;
+    font-size: 15px;
     width: 80%;
+  
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 .answerList {
@@ -16,7 +20,12 @@
     display: block;
     width: 80%;
     border: 0px;
-    font-size: 20px;
+    font-size: 13px;
+    
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 .answerList:hover,
