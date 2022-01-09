@@ -1,8 +1,9 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
+const ecca = document.querySelector('#ecca')
 
-const endPoint = 12;
+const endPoint = 13;
 const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //사용자가 선택한 부분에 대한 점수
 const color = ['#5ec2c2', '#5a8dff', '#e4002b', '#aa8b2f', '#ec1c24', '#ffc900', '#ff4219', '#ff0a07', '#f37321', '#00492b'];
 
@@ -41,6 +42,7 @@ function goResult() {
         setTimeout(() => {
         qna.style.display = "none";
         result.style.display = "block";
+        ecca.style.display = "block";
         }, 450);
     });
     setResult();
